@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "image": "https://d1e3z2jco40k3v.cloudfront.net/-/media/project/oneweb/mccormick-us/mccormick/recipe-images/stir-fry-vegetables-recipe-800x800.jpg",
+        "name": "Vegetable Stir-Fry",
+        "food_type": "veg",
+        "rating": 4.5,
+        "price": 10.99,
+        "description": "A delicious and healthy stir-fry made with fresh vegetables and a savory sauce."
+      },
+      {
+        "id": 2,
+        "image": "https://images.themodernproper.com/billowy-turkey/production/posts/ChickenFettuccineAlfredo_11.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1675190172&s=89dafc9de3618b7673be90fa09af4044",
+        "name": "Chicken Alfredo",
+        "food_type": "non-veg",
+        "rating": 4.2,
+        "price": 12.99,
+        "description": "Creamy and rich fettuccine Alfredo made with tender chunks of chicken."
+      },
+      {
+        "id": 3,
+        "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2016/02/veg-burger-recipe-1-480x270.jpg",
+        "name": "Veggie Burger",
+        "food_type": "veg",
+        "rating": 4.0,
+        "price": 8.99,
+        "description": "A delicious burger made with a patty made of vegetables and served with fries."
+      },
+      {
+        "id": 4,
+        "image": "https://amandascookin.com/wp-content/uploads/2019/02/Beef-Stroganoff-Heros-SQ-680.jpg",
+        "name": "Beef Stroganoff",
+        "food_type": "non-veg",
+        "rating": 4.8,
+        "price": 14.99,
+        "description": "A classic Russian dish made with tender beef, mushrooms, and a creamy sauce."
+      },
+      {
+        "id": 5,
+        "image": "https://simply-delicious-food.com/wp-content/uploads/2020/09/Creamy-vegetable-curry-4.jpg",
+        "name": "Vegetable Curry",
+        "food_type": "veg",
+        "rating": 4.3,
+        "price": 11.99,
+        "description": "A flavorful curry made with mixed vegetables, spices, and served with rice or naan."
+      },
+      {
+        "id": 6,
+        "image": "https://thecozyapron.com/wp-content/uploads/2018/03/baja-fish-tacos_thecozyapron_1.jpg",
+        "name": "Fish Tacos",
+        "food_type": "non-veg",
+        "rating": 4.6,
+        "price": 9.99,
+        "description": "Tasty tacos made with crispy fish, cabbage slaw, and a tangy sauce."
+      },
+      {
+        "id": 7,
+        "image": "https://i0.wp.com/www.thursdaynightpizza.com/wp-content/uploads/2022/06/veggie-pizza-side-view-out-of-oven.png?resize=720%2C480&ssl=1",
+        "name": "Veggie Pizza",
+        "food_type": "veg",
+        "rating": 4.1,
+        "price": 10.99,
+        "description": "A classic pizza topped with a variety of fresh vegetables and gooey cheese."
+      }
+  
+]
