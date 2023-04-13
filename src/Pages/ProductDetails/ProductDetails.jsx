@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner";
 
@@ -6,13 +6,31 @@ const ProductDetails = () => {
   const product = useLoaderData();
   const { id, name, price, rating, image, food_type, description } = product;
 
-  const handleOrder = () => {
+  const [ordered,setOrdered] = useState(false)
+
+  useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("orders"));
     if(storedData){
-        localStorage.setItem("orders",JSON.stringify([...storedData,product]))
+        const exist = storedData.find(item => item.id == id);
+        if(exist){
+            setOrdered(true)
+        }
+
+    }
+  },[product])
+
+
+  const handleOrder = () => {
+    const storedData = JSON.parse(localStorage.getItem("orders"));
+
+
+    if(storedData){
+            localStorage.setItem("orders",JSON.stringify([...storedData,product]))
+
     }else{
         localStorage.setItem("orders",JSON.stringify([product]))
     }
+    setOrdered(true)
 
   }
 
@@ -33,7 +51,15 @@ const ProductDetails = () => {
           <p className="text-md">Rating: {rating}</p>
           <p>{description}</p>
           <div className="card-actions justify-end">
-            <button onClick={handleOrder} className="btn btn-primary">Order This Food</button>
+            <button disabled={ordered} onClick={handleOrder} className="btn btn-primary">
+            {
+                ordered ?
+                "Already Ordered"
+                :
+                "Order This Food"
+                }
+
+            </button>
           </div>
         </div>
       </div>
